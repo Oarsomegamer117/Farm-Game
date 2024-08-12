@@ -14,6 +14,6 @@ public class MainMenuFarmer : MonoBehaviour
         speed = 4.0f;
         rb.velocity = new Vector2(speed, 0);
     }
-
+    //This means that the farmer in the start screen will automatically move across te screen witout any input need from the user.
 
 }
