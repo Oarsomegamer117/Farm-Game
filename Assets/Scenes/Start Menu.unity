@@ -4482,6 +4482,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504296466}
   m_CullTransparentMesh: 1
+--- !u!1 &1582182276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582182278}
+  - component: {fileID: 1582182277}
+  m_Layer: 0
+  m_Name: Controls button script holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1582182277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582182276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c87bdd61987264b8d38147d78cbf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1582182278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582182276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599536012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4564,7 +4608,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1599536015}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1582182277}
+        m_TargetAssemblyTypeName: Controlsbuttonstartmenu, Assembly-CSharp
+        m_MethodName: LoadSceneByName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1599536015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13136,6 +13192,7 @@ GameObject:
   - component: {fileID: 1976384243}
   - component: {fileID: 1976384242}
   - component: {fileID: 1976384244}
+  - component: {fileID: 1976384245}
   m_Layer: 0
   m_Name: Farmer
   m_TagString: Untagged
@@ -13294,6 +13351,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820be3457f7cd2d4ebed2a74aa0686a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1976384245
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976384239}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1a5269a1ef430146b72df52b52c4967, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1984669179
 GameObject:
   m_ObjectHideFlags: 0
@@ -13777,3 +13855,4 @@ SceneRoots:
   - {fileID: 912015075}
   - {fileID: 252120624}
   - {fileID: 941380500}
+  - {fileID: 1582182278}

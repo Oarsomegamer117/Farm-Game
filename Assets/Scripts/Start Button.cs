@@ -9,4 +9,5 @@ public class StartButton : MonoBehaviour
     {
         SceneManager.LoadScene("Scenes/Main Level");
     }
+    // This is what loads the new scene when the start button is pressed.
 }
