@@ -36,6 +36,7 @@ public class Move : MonoBehaviour
         else
             direction = Vector2.right;
 
+        waitnum = Random.Range(2, 6);
         //move the character based on the above
         rb.velocity = direction * speed;
     }
@@ -47,7 +48,7 @@ public class Move : MonoBehaviour
 
         if (waiting == false)
         {
-            if (timer > 1 + Random.Range(2, 5))
+            if (timer > 2)
             {
                 waiting = true;
                 timer = 0;
@@ -59,7 +60,7 @@ public class Move : MonoBehaviour
             rb.velocity = Vector2.zero;
             
          
-            if (timer > 1 + Random.Range(2, 5))
+            if (timer > waitnum)
             {
                 int num = Random.Range(1, 5);
 

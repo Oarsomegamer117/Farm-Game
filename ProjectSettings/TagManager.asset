@@ -32,11 +32,11 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
   - Background
+  - Confiner
+  - Chicken Confiner
+  - Farmer
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
