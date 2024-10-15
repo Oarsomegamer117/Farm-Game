@@ -11,11 +11,14 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     Animator anim;
 
+    public bool talking;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); 
         anim = GetComponent<Animator>();
+        talking = false;
     }
 
     // Update is called once per frame
@@ -36,5 +39,10 @@ public class Player : MonoBehaviour
             anim.SetBool("Moving", false);
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        talking = true;
     }
 }
