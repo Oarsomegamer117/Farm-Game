@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class BackButton : MonoBehaviour
 {
-    public void LoadSceneByName()
+    public void LoadSceneByName()//The function that loads a new scene.
     {
-        SceneManager.LoadScene("Scenes/Start Menu");
+        SceneManager.LoadScene("Scenes/Start Menu");//Says what scene to load based on the name that its given.
     }
-    // This is what loads the new main menu when the back button is pressed
 }

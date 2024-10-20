@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
-    public void LoadSceneByName()
+    public void LoadSceneByName()//The function that loads a new scene.
     {
-        SceneManager.LoadScene("Scenes/Talking Scene");
+        SceneManager.LoadScene("Scenes/Talking Scene");//Says what scene to load based on the name that its given.
     }
-    // This is what loads the new scene when the start button is pressed.
 }

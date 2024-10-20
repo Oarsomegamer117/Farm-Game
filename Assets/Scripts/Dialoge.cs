@@ -21,9 +21,9 @@ public class Dialoge : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textComponent.text = string.Empty; 
+        textComponent.text = string.Empty;//Making sure no text is currently displayed.
 
-        index = 0;
+        index = 0;//Start the dialogue from the very start.
         StartCoroutine(TypeLine()); //This will start the type line function to add the text to the screen.
 
     } 
