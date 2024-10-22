@@ -51,6 +51,8 @@ public class Move : MonoBehaviour
 
         if (waiting == false)//If the chicken is not moving
         {
+            anim.SetBool("ChickenMoving", true);//Set the moving bool for the animator to true
+
             if (timer > 2)//If 2 seconds have passed
             {
                 waiting = true;//Set waiting to true
@@ -61,8 +63,10 @@ public class Move : MonoBehaviour
         if (waiting == true)//If waiting is true
         {
             rb.velocity = Vector2.zero;//Stop the chickens movement
-            
-         
+
+            anim.SetBool("ChickenMoving", false);//Set the moving bool for the animator to false
+
+
             if (timer > waitnum)//When the timer is greater than the random number picked as the waitnum
             {
                 int num = Random.Range(1, 5);//Pick a random number between 1 nd 4
@@ -74,7 +78,7 @@ public class Move : MonoBehaviour
                     direction = Vector2.right;//Make the direction to move in right
                     anim.SetFloat("X", 1);//Set the x value in the animator float to 1
                     anim.SetFloat("Y", 0);//Set the y value in the animator float to 0. Both of these combined mean the right animation will play
-                    Debug.Log("right is now 1");//Print to the console that we should be going right
+                  //  Debug.Log("right is now 1");//Print to the console that we should be going right
                 }
               
 
@@ -83,7 +87,7 @@ public class Move : MonoBehaviour
                     direction = Vector2.left;//Make the direction to move in left
                     anim.SetFloat("X", -1);//Set the x value in the animator float to -1
                     anim.SetFloat("Y", 0);//Set the y value in the animator float to 0. Both of these combined mean that the left animation will play
-                    Debug.Log("left is now -1");//Print to the console that we should be going left
+                  //  Debug.Log("left is now -1");//Print to the console that we should be going left
                 }
                 
 
@@ -92,7 +96,7 @@ public class Move : MonoBehaviour
                     direction = Vector2.up;//Make the direction to move in up
                     anim.SetFloat("Y", 1);//Set the y value in the animator float to 1
                     anim.SetFloat("X", 0);//Set the x value in the animator float to 0. Both of these combined mean that the up animation will play
-                    Debug.Log("up is now 1");//Print to the console that we should be going up
+                  //  Debug.Log("up is now 1");//Print to the console that we should be going up
                 }
                    
                 else//If the number isnt 1, 2, or 3
@@ -100,7 +104,7 @@ public class Move : MonoBehaviour
                     direction = Vector2.down;//Make the direction to move in up. Changed from right
                     anim.SetFloat("Y", -1);//Set the y value in the animator float to -1
                     anim.SetFloat("X", 0);//Set the x value in the animator float to 0. Both of these combined mean that the down animation will play
-                    Debug.Log("down is now -1");//Print to the console that we should be going down
+                  //  Debug.Log("down is now -1");//Print to the console that we should be going down
                 }
                    
 

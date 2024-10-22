@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Animations;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Player : MonoBehaviour
     Animator anim;//Calling the animator anim
 
     public bool talking;//A boolean to see if the farmer is talking
+
+    public TMP_Text carrotsDisplayText;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +33,7 @@ public class Player : MonoBehaviour
             anim.SetBool("Moving", true);//Set the moving boolean from the animator to true
             anim.SetFloat("MoveX", rb.velocity.x);//Make the MoveX float in the animator = the x velocity
             anim.SetFloat("MoveY", rb.velocity.y);//Make the MoveY float in the animator = the y velocity
-            Debug.Log(rb.velocity);//Print the velocity of the player to the console
+           // Debug.Log(rb.velocity);//Print the velocity of the player to the console
         }
 
         else//If there is no vertical movement from the joystick
@@ -38,8 +41,10 @@ public class Player : MonoBehaviour
             rb.velocity = Vector2.zero;//Set the speed of the player to 0
             anim.SetBool("Moving", false);//Set the moving bool for the animator to flase
         }
-
+      
     }
+
+    
 
     private void OnTriggerEnter2D(Collider2D collision)//When the player collides with a trigger collider
     {

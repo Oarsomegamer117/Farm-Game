@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using TMPro;
 
 public class Spawn : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Spawn : MonoBehaviour
     int xPos;
     int yPos;
     public GameObject Carrot;
+
+    public int carrotNum;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +37,8 @@ public class Spawn : MonoBehaviour
             SpawnTimer = 0;
         }
     }
+
+
 
     //Random x position
     //Random y position

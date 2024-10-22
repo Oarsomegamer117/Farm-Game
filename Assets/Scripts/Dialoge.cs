@@ -70,7 +70,7 @@ public class Dialoge : MonoBehaviour
         if (index < lines.Length - 1)
         {
             index++; //adds an int of 1 each time the next line is called.
-            textComponent.text = string.Empty;
+            textComponent.text = string.Empty;//This makes the text dissapear before the next line is put up on the screen.
             StartCoroutine (TypeLine()); //starts the coroutine to type the next line out.
         }
     }
