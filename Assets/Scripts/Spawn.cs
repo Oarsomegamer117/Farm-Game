@@ -13,10 +13,13 @@ public class Spawn : MonoBehaviour
 
     public int carrotNum;
 
+    public int upgradeNum;
+
     // Start is called before the first frame update
     void Start()
     {
         SpawnTimer = 0;
+        upgradeNum = 3;
     }
 
     // Update is called once per frame
@@ -25,7 +28,7 @@ public class Spawn : MonoBehaviour
         SpawnTimer += Time.deltaTime;
 
 
-        if (SpawnTimer > 3)
+        if (SpawnTimer > upgradeNum)
         {
             int xPos = Random.Range(29, 42);
             int yPos = Random.Range(-4, -26);

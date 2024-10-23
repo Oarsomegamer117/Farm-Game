@@ -24,7 +24,7 @@ public class Dialoge : MonoBehaviour
         textComponent.text = string.Empty;//Making sure no text is currently displayed.
 
         index = 0;//Start the dialogue from the very start.
-        StartCoroutine(TypeLine()); //This will start the type line function to add the text to the screen.
+        //StartCoroutine(TypeLine()); //This will start the type line function to add the text to the screen.
 
     } 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class Dialoge : MonoBehaviour
             }
             else
             {
-                StopAllCoroutines(); //stops the typing of the previous line
+                //StopAllCoroutines(); //stops the typing of the previous line
                 textComponent.text = lines[index]; //when the line hasn't finished typing and the screen is clicked change the line and stop the coroutine for writing the previous line.
             }
         }
@@ -54,7 +54,7 @@ public class Dialoge : MonoBehaviour
         }
     }
 
-    IEnumerator TypeLine()
+    /*IEnumerator TypeLine()
     {
         //this types each character 1 by 1 so the text looks like it's being typed as the conversation happens.
         foreach (char c in lines[index].ToCharArray()) //This takes the enire string and breaks it down into a character array with each character as an individual.
@@ -63,7 +63,7 @@ public class Dialoge : MonoBehaviour
             yield return new WaitForSeconds(textSpeed); //this sets the speed at which the characters will be typed at. 
                                                         //I define this in the inspector in Unity.
         }
-    }
+    }*/
     
     void NextLine()
     {
@@ -71,7 +71,7 @@ public class Dialoge : MonoBehaviour
         {
             index++; //adds an int of 1 each time the next line is called.
             textComponent.text = string.Empty;//This makes the text dissapear before the next line is put up on the screen.
-            StartCoroutine (TypeLine()); //starts the coroutine to type the next line out.
+            //StartCoroutine (TypeLine()); //starts the coroutine to type the next line out.
         }
     }
 }

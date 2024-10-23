@@ -2969,7 +2969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178, y: 99}
+  m_AnchoredPosition: {x: -178, y: 153}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1030353046
@@ -2996,10 +2996,13 @@ MonoBehaviour:
 
     - Use the Joystick to move around.
 
-    - Tap on things
-    to interact with them.
+    - Run into carrots
+    to collect the.
 
-    - Have Fun!'
+    - The menu button is up the top right.
+
+    - Tip (Upgrades
+    to your fertiliser increases the value of your carrots)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a041b55593dedea4f9b247f65f330da7, type: 2}
   m_sharedMaterial: {fileID: 3194877612762988705, guid: a041b55593dedea4f9b247f65f330da7, type: 2}
