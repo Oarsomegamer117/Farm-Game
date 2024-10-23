@@ -12,6 +12,7 @@ public class MenuBox : MonoBehaviour
     public static int carrotNum;
     public static int moneyNum;
     public int carrotMult;
+    public float timeDecreaser;
 
     public TextMeshProUGUI carrotsDisplayText;   //the text that is displayed for the carrots
     public TextMeshProUGUI moneyDisplayText;   //the text that is displayed for the money
@@ -19,6 +20,8 @@ public class MenuBox : MonoBehaviour
     void Start()
     {
         carrotMult = 2;
+
+        timeDecreaser = 0.1f;
     }
     public void TogglePopup()//A function that will toggle the panel from being visible and invisible
     {
@@ -30,13 +33,16 @@ public class MenuBox : MonoBehaviour
 
     public void SellCarrot()
     {
-        moneyNum = carrotNum * carrotMult;
+        
+            moneyNum = carrotNum * carrotMult;
 
-        carrotsDisplayText.text = "Carrots - " + 0;
+            carrotsDisplayText.text = "Carrots - " + 0;
 
-        moneyDisplayText.text = "Money - $" + moneyNum;
+            moneyDisplayText.text = "Money - $" + moneyNum;
 
-        carrotNum = 0;
+            carrotNum = 0;
+       
+
     }
 
     public void Upgrade()
@@ -48,6 +54,8 @@ public class MenuBox : MonoBehaviour
             moneyDisplayText.text = "Money - $" + moneyNum;
 
             carrotMult = carrotMult + 1;
+
+            Spawn.upgradeNum = Spawn.upgradeNum - timeDecreaser;
         }
     }
 

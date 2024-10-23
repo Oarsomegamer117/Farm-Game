@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Talking Scene.unity
     guid: 22daddc7bc0fc73459c5d941c0a32111
+  - enabled: 1
+    path: Assets/Scenes/Are You Sure.unity
+    guid: 26ce4ee6c150a1446adb5dcf9a4e001a
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: b21b75f3faec0914284b11f022ecfe92, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 0fb628819295c0744b1a52c70886267e, type: 2}

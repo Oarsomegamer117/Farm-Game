@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class QuitButton : MonoBehaviour
+public class NoButton : MonoBehaviour
 {
     public void LoadSceneByName()//The function that loads a new scene.
     {
-        SceneManager.LoadScene("Scenes/Are You Sure");//Says what scene to load based on the name that its given.
+        SceneManager.LoadScene("Scenes/Start Menu");//Says what scene to load based on the name that its given.
     }
-
 }

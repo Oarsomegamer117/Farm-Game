@@ -11,15 +11,15 @@ public class Spawn : MonoBehaviour
     int yPos;
     public GameObject Carrot;
 
-    public int carrotNum;
+   
 
-    public int upgradeNum;
+    public static float upgradeNum;
 
     // Start is called before the first frame update
     void Start()
     {
         SpawnTimer = 0;
-        upgradeNum = 3;
+        upgradeNum = 3.0f;
     }
 
     // Update is called once per frame
